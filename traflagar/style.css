@@ -1,0 +1,591 @@
+/* Global Styles */
+* {
+    margin: 0px;  /* Remove default margin for all elements */
+    padding: 0px;  /* Remove default padding for all elements */
+    list-style: none;  /* Remove list bullets */
+    text-decoration: none;  /* Remove text decoration like underline */
+}   
+
+body {
+    width: 100%;  /* Full width of the viewport */
+    height: 5879px;  /* Specific height for body */
+}
+
+/* Flexbox layout for various elements */
+body, #logo, #ellipse, #nav-bar, #element, #div-1, #heading-text, #our-services, 
+#our-service-text, #services, #healthcare, #healthcare div, #mobile-app, 
+#mobile-app div, #reply-container, #reply-div, #reply, #ellipse-and-name, 
+#ellipse-name, #arrow-nav, #four-circle, #article-div, #our-lates-article-container,
+.article, .article-read-more, .article-description, #logo-2, #ellipse-2, 
+#footer-container, #lists-div, #footer-div-1, .list-div {
+    display: flex;  /* Enable flexbox for layout */
+}
+
+/* Center alignment for specific elements */
+#ellipse, #nav-bar, #element, #ellipse-2 {
+    justify-content: center;  /* Horizontally center content */
+    align-items: center;  /* Vertically center content */
+}
+
+/* Vertical alignment for body and key elements */
+body, #logo, #div-1, #our-service-text, #our-services, #services, #healthcare,
+#mobile-app, #reply-container, #reply, #ellipse-and-name, #arrow-nav, 
+#our-lates-article-container, .article, .article-description, #footer-container, #logo-2 {
+    align-items: center;  /* Vertically align content */
+}
+
+/* Horizontal spacing between items */
+#nav-bar, #services, #healthcare, #healthcare div, #mobile-app div, #reply-and-name, 
+#arrow-nav, #four-circle, #article-div, #our-lates-article-container, .article-read-more, 
+#lists-div, #footer-div-1, .list-div, #logo-2 {
+    justify-content: space-between;  /* Space out items horizontally */
+}
+
+/* Column layout for text and other elements */
+body, #heading-text, #our-service-text, #our-services, #healthcare div, #mobile-app div,
+#reply-container, #reply-div, #reply, #ellipse-name, #our-lates-article-container, .article,
+.article-description, #footer-div-1, .list-div {
+    flex-direction: column;  /* Arrange children in a column */
+}
+
+/* Local Styles */
+
+/* Logo positioning and size */
+#logo {
+    margin-top: 51px;
+    margin-left: 191px;
+    width: 160px;
+    height: 41px;
+}
+
+/* Ellipse styling */
+#ellipse {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;  /* Circular shape */
+    background-color: #458FF6;  /* Blue color */
+}
+
+#ellipse h1 {
+    color: white;  /* White text color inside the circle */
+}
+
+/* Logo text styling */
+#logo p {
+    width: 17px;
+    height: 32px;
+    font-size: 26px;
+    font-weight: 700px;
+}
+
+/* Navigation bar styling */
+#nav-bar {
+    margin-top: -30px;
+    margin-left: 863px;
+    width: 545px;
+    height: 23px;
+}
+
+#nav-bar li {
+    font-size: 18px;
+    color: #1F1534;
+    opacity: 50%;  /* Slight transparency */
+}
+
+#nav-bar li:first-child {
+    opacity: 100%;  /* Full opacity for the first item */
+}
+
+/* Element layout (absolute position) */
+#element {
+    margin-top: 160px;
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+#element div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #97c3f978;
+    margin-top: 20px;
+}
+
+/* Div 1 styling */
+#div-1 {
+    justify-content: space-evenly;
+    margin-top: 84px;
+}
+
+/* Picture styling */
+#picture-1 {
+    width: 693px;
+    height: 598px;
+}
+
+/* Heading text styling */
+#heading-text {
+    width: 445px;
+    height: 338px;
+}
+
+#heading-text h1 {
+    color: #000000;  /* Black color */
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#heading-text p {
+    margin-top: 25px;
+    color: #7D7987;  /* Light gray color */
+    font-size: 21px;
+    font-weight: 300;
+}
+
+#heading-text button {
+    width: 200px;
+    height: 60px;
+    border-radius: 55px;
+    border: none;
+    background-color: #458FF6;
+    color: white;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+/* Section for our services */
+#our-services {
+    width: 100%;
+    height: 1133px;
+    margin-top: 190px;
+}
+
+#our-service-text {
+    text-align: center;
+}
+
+#our-service-text h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#our-service-text p {
+    width: 952px;
+    margin-top: 53px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #7D7987;
+}
+
+/* Services section layout */
+#services {
+    width: 1120px;
+    height: 745px;
+    margin-top: 91px;
+    flex-wrap: wrap;
+}
+
+#services div {
+    width: 350px;
+    height: 345px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+}
+
+#services img {
+    width: 91.98px;
+    height: 90px;
+    margin-top: 54px;
+    margin-left: 37px;
+}
+
+#services h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-top: 30px;
+    margin-left: 39px;
+    color: #000000;
+}
+
+#services p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    width: 266px;
+    margin-left: 39px;
+}
+
+#our-services button {
+    width: 200px;
+    height: 60px;
+    margin-top: 69px;
+    margin-left: 0px;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    color: #458FF6;
+    background-color: white;
+}
+
+/* Healthcare section layout */
+#healthcare {
+    width: 1273px;
+    height: 477px;
+    margin-top: 220px;
+}
+
+#healthcare img {
+    width: 650px;
+    height: 477px;
+}
+
+#healthcare div {
+    width: 486px;
+    height: 388px;
+}
+
+#healthcare div h1 {
+    width: 481px;
+    height: 112px;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+#healthcare div p {
+    width: 450px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+#healthcare div button {
+    width: 200px;
+    height: 60px;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    color: #458FF6;
+    background-color: white;
+}
+
+/* Mobile app section layout */
+#mobile-app {
+    margin-left: 120px;
+    margin-top: 261px;
+    width: 1060px;
+    height: 434px;
+}
+
+#mobile-app div {
+    width: 375px;
+    height: 420px;
+}
+
+#mobile-app div h1 {
+    width: 254px;
+    height: 96px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+}
+
+#mobile-app div p {
+    width: 420px;
+    height: 120px;
+    max-width: 340px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    color: #7D7987;
+}
+
+#mobile-app div button {
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #458FF6;
+    background-color: white;
+}
+
+#mobile-app img {
+    width: 665px;
+    height: 434px;
+}
+
+/* Reply container and styling */
+#reply-container {
+    width: 1219.58px;
+    height: 502px;
+    margin-top: 251px;
+    margin-left: 30px;
+}
+
+#reply-div {
+    width: 1120px;
+    height: 425px;
+    border-radius: 24px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    justify-content: space-evenly;
+}
+
+#reply {
+    width: 100%;
+    height: 141px;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#ellipse-and-name {
+    width: 354px;
+    height: 141px;
+}
+
+#reply-text {
+    width: 420px;
+    height: 120px;
+}
+
+#reply-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    text-align: center;
+}
+
+#reply-ellipse {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+}
+
+#reply-ellipse img {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+}
+
+#ellipse-name {
+    line-height: 30px;
+    color: white;
+    margin-left: 29px;
+}
+
+#ellipse-name :nth-child(1) {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#ellipse-name :nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#reply-text {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: aliceblue;
+}
+
+/* Arrow navigation and four-circle section */
+#arrow-nav {
+    width: 336.43px;
+    height: 20px;
+    margin-top: 42px;
+}
+
+.arrow-1 {
+    width: 28.06px;
+    height: 17.86px;
+    color: #458FF6;
+    rotate: 90deg;
+    margin-top: 15px;
+    opacity: 30%;
+}
+
+.arrow-2 {
+    width: 28.06px;
+    height: 17.86px;
+    color: #458FF6;
+    rotate: -90deg;
+    margin-bottom: 15px;
+}
+
+#four-circle {
+    width: 94px;
+    height: 10px;
+}
+
+#four-circle div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5B9BF3;
+    opacity: 30%;
+}
+
+#four-circle :nth-child(1) {
+    opacity: 100%;
+}
+
+/* Latest articles section */
+#our-lates-article-container {
+    width: 100%;
+    height: 810px;
+    margin-top: 216px;
+}
+
+#article-div {
+    width: 1120px;
+    height: 512px;
+}
+
+.article {
+    width: 350px;
+    height: 512px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+}
+
+.article img {
+    width: 100%;
+    height: 245px;
+    border-radius: 20px;
+}
+
+.article h1 {
+    width: 251px;
+    height: 64px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.article p {
+    width: 266px;
+    height: 84px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987;
+}
+
+.article-read-more {
+    width: 110px;
+    height: 28px;
+}
+
+.article a {
+    height: 28px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    color: #4089ED;
+}
+
+.article-read-more i {
+    color: #4089ED;
+    rotate: -90deg;
+    width: 14.14px;
+    height: 9px;
+    margin-top: 9px;
+    margin-right: 2px;
+}
+
+.article-description {
+    width: 251px;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+#our-lates-article-container button {
+    width: 200px;
+    height: 60px;
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
+    background-color: white;
+    color: #458FF6;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 423px;
+}
+
+#footer-container {
+    width: 100%;
+    height: 423px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    justify-content: space-around;
+    margin-top: 201px;
+}
+
+#logo-2 {
+    width: 70px;
+    height: 41px;
+}
+
+#ellipse-2 {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#ellipse-2 h1 {
+    color: #458FF6;
+}
+
+#logo-2 p {
+    width: 17px;
+    height: 32px;
+    font-size: 26px;
+    font-weight: 700px;
+}
+
+#footer-div-1 {
+    width: 391px;
+    height: 201px;
+}
+
+#footer-div-1 p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+#lists-div {
+    width: 660px;
+    height: 214px;
+}
+
+.list-div {
+    width: 180px;
+    height: 214px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.list-div li {
+    line-height: 40px;
+}
