@@ -1,0 +1,428 @@
+/* global styles */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+#main-nav-bar,#three-line-logo-name,.nav-lists,body,
+#scrolling-content-2,.scrolling-items,#main-section,
+#main-container,#search-bar,#search-bar-container,
+#search-icon,#search-bar-container,#create,#channel-buttons,
+#heading-bar,#scrolling-content-2-container,#videos-container,
+.videos,.videos-description,.description-div{
+    display: flex;
+}
+#main-nav-bar,#main-container,#main-section,.videos,.description-div{
+    flex-direction: column;
+}
+#three-line-logo-name,#search-bar-container,#channel-buttons,
+#heading-bar,#scrolling-content-2-container,#videos-container,
+.videos-description{
+    justify-content: space-between;
+}
+#main-section,#scrolling-content-2-container{
+    justify-content: center;
+}
+.nav-lists,#scroling-content-2,#search-bar,#search-bar-container,
+#create,#channel-buttons,#scrolling-content-2-container,#videos-container{
+    align-items: center;
+}
+.scrolling-items,#search-icon{
+    justify-content: center;
+    align-items: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+}
+/* local styles */
+header{
+   margin-top: 25px;
+}
+#main-nav-bar{
+    width: 270px;
+    height: 920px;
+}
+#three-line-logo-name{
+    margin-left: 20px;
+    width: 129.59px;
+    height: 22px;
+}
+#three-line{
+    width: 22px;
+    height: 22px;
+    fill: white;
+    border-radius: 50%;
+}
+#three-line:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+#logo-and-name{
+    width: 89.59px;
+    height: 20px;
+    fill: white;
+}
+#scroll-nav {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#scroll-nav::-webkit-scrollbar {
+    width: 15px; 
+}
+
+#scroll-nav::-webkit-scrollbar-track {
+    background:none; /
+}
+
+#scroll-nav::-webkit-scrollbar-thumb {
+    background: none; 
+}
+
+#scroll-nav::-webkit-scrollbar-thumb:hover {
+    background: #d9d9d9; 
+}
+
+.nav-lists{
+    border-radius: 15px;
+    width: 180px;
+    height: 34px;
+    margin-left:20px;
+    background: none;
+    border: none;
+}
+
+.nav-lists:hover{
+    background-color: rgba(255, 255, 255, 0.104);
+}
+.nav-lists:active{
+    background-color: rgba(255, 255, 255, 0.188);
+}
+
+.icons{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+.nav-bar-spans{
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+#scroll-div-2,#subscriptions,#explore,#more-from-youtube,#last-div,footer{
+    margin-top: 24px;
+}
+.nav-bar-line{
+    height: 1px;
+    width: 200px;
+    background-color:#5c5656;
+    border: none;
+    margin-top: 24px;
+}
+.subscriptions-icons{
+    border: 1px solid white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient( #ff7e5f,#feb47b,#ff6a00, #d84b5b,#c5a4e2,#6b7a8f);;
+}
+#subscriptions h1,#explore h1,#more-from-youtube h1{
+    color:#AAAAAA;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+footer p{
+    margin-left: 20px;
+    color:#AAAAAA;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+}
+footer span{
+    margin-left: 20px;
+    color:#828080;
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+}
+#main-section{
+    width: 1650px;
+    height: 100%;
+    margin-top: 10px;
+}
+#main-container{
+    width: 98%;
+    height: 100%;
+}
+
+#heading-bar{
+    right: 20px;
+    height: 45px;
+    width: 1400px;
+    margin-top: 10px;
+}
+#search{
+    height:45px;
+    width: 520px;
+    border-radius: 20px 0px 0px 20px;
+    background: none;
+    border: 1px solid #5c5656;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#search-bar-container{
+    width: 620px;
+    height:45px;
+}
+#search-bar{
+    width:540px;
+    height: 45px;
+
+}
+#search-icon{
+    all: unset;
+    background-color: rgba(255, 255, 255, 0.104);
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+}
+#search-icon svg {
+    width: 70px; /* Set desired width */
+    height: 75px; /* Set desired height */
+    fill: white;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#microphone-icon{
+    width: 45px;
+    height: 45px;
+    fill: white;
+    background-color: rgba(255, 255, 255, 0.104);
+    border-radius: 50%;
+    padding: 8px;
+}
+#channel-buttons{
+    height: 45px;
+    width: 200px;
+
+}
+#create{
+    width: 97.19px;
+    height:36px;
+    background-color: rgba(255, 255, 255, 0.104);;
+    border-radius: 20px;
+    fill: white;
+    color: white;
+    padding: 8px;
+}
+#create span{
+    margin-right: 5px;
+}
+#notification{
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+#account{
+    width: 35px;
+    height: 35px;
+    border: 1px solid green;
+    border-radius: 50%;
+}
+#scrolling-content-2-container{
+    width: 100%;
+    height: 34px;
+    margin-top: 15px;
+}
+#scrolling-content-2{
+    width: 98%;
+    height: 32px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#scrolling-content-2::-webkit-scrollbar {
+    width: 15px; 
+    display: none;
+}
+
+#scrolling-content-2::-webkit-scrollbar-track {
+    background:none; 
+    display: none;
+}
+
+#scrolling-content-2::-webkit-scrollbar-thumb {
+    background: none; 
+    display: none;
+}
+
+
+.scrolling-items{
+    width: 100%;
+    height: 32px;
+    border: 10px;
+    border-radius: 10px;
+    background-color: #6b6c6e4f;
+    margin-left: 15px;
+    padding: 15px;
+}
+.scrolling-items span{
+    color: white;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+.scrolling-button{
+    z-index: 1;
+    width:24px;
+    height: 24px;
+    fill: white;
+    border-radius: 50%;
+    background: none;
+}
+.scrolling-button:hover{
+    background-color: #6b6c6e4f;
+    transition: 0.5s;
+}
+#videos-container{
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    row-gap: 25px;
+}
+
+.videos{
+    width: 380px;
+    height: 360px;
+}
+#videos-container::-webkit-scrollbar {
+    background: none;
+}
+
+#videos-container::-webkit-scrollbar-track {
+    background:none; /
+}
+
+#videos-container::-webkit-scrollbar-thumb {
+    background-color:#d9d9d9; 
+}
+
+#videos-container::-webkit-scrollbar-thumb:hover {
+    background: #b5b1b1; 
+}
+.videos-photo{
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+.videos-description{
+    width: 100%;
+    height: 35%;
+
+}
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+.channel-logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 1px solid green;
+}
+.video-title{
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    max-height: 4.4rem;
+    white-space: normal;
+    max-width:319px;
+    margin: 6px;
+}
+.description-div{
+    width: 82%;
+    height: 100%;
+
+}
+.video-views-and-upload-time{
+    color: rgb(193, 186, 186);
+    font-size: 0,8rem;
+    line-height:1rem;
+    margin-left:6px;
+    margin-top:0px;
+}
+.video-settings-div{
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+}
+.video-settings-div svg{
+    fill: white;
+}
+.video-settings-div:hover{
+    background-color: rgba(255, 255, 255, 0.104);
+    transition: 0.3s;
+}
+.time{
+    position: absolute;
+    color: red;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width:1530px){ 
+    .time{
+        color: rgb(166, 0, 255);
+    }
+    #main-nav-bar{
+        width: 220px;
+        height: 900px;
+    }
+    #main-section{
+        width: 1294px;
+        height: 100%;
+        margin-top: 10px;
+    }
+    #heading-bar{
+        margin-left: 190px;
+        height: 45px;
+        width: 1060px;
+        margin-top: 10px;
+    }
+    #videos-container{
+        width: 100%;
+        height: 790px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        row-gap: 25px;
+    }
+    
+    .videos{
+        width: 400px;
+        height: 360px;
+    }
+}
+
+
+
+
+
+
+
+
