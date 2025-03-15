@@ -1,0 +1,454 @@
+/* global styles */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+#header,#nav-bar,#left,#right,#right a,#nav-bar-2,#nav-bar-2-div,main,ul,#main-section,.drinks,
+.contents-div{
+    display: flex;
+}
+ul{
+    flex-direction: column;
+}
+#left,#right,#right a,#nav-bar-2,#nav-bar-2-div,.drinks{
+    align-items: center;
+}
+#nav-bar,#left,#right,#nav-bar-2-div{
+    justify-content: space-between;
+}
+#header,main{
+    justify-content: center;
+}
+
+/* local styles */
+
+
+#header{
+    width: 100%;
+    height: 100px;
+}
+#header-line{
+    margin-top: 0px;
+}
+#nav-bar{
+    height: 100%;
+    width: 95%;
+}
+#left{
+    width: 30%;
+    height: 100%;
+}
+#left svg{
+    width: 85px;
+    height: 65px;
+}
+#spans-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.left-spans{
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+.left-spans:hover{
+    color: #006242;
+    transition: 0.3s;
+}
+#right{
+    width: 20%;
+    height: 100%;
+    font-size: 1.3rem;
+}
+#right a{
+    color: black;
+    font-size: 1.1rem;
+}
+#right a:hover{
+    color: #006242;
+    transition: 0.3s;
+}
+#sign-in{
+    width: 79px;
+    height: 34px;
+    border-radius: 25px;
+    background:none;
+    font-weight:600;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+#join-now{
+    width: 79px;
+    height: 34px;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    font-weight:600;
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+}
+#sign-in:active{
+    scale: 0.95;
+    transition: 0.3s;
+}
+#join-now:active{
+    scale: 0.95;
+    transition: 0.3s;
+}
+#sign-in:hover{
+    background-color: rgba(0, 0, 0, 0.058);
+    transition: 0.3s;
+}
+#join-now:hover{
+    background-color: rgba(0, 0, 0, 0.877);
+    transition: 0.3s;
+}
+#nav-bar-2{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(249, 249, 249);
+}
+#nav-bar-2-div{
+    width: 15%;
+    margin-left: 120px;
+}
+#nav-bar-2-div a{
+    color: #000000de;
+    font-size: 1.1rem;
+}
+#main-section{
+    width: 83%;
+    height: 100%;
+}
+#left-div{
+    width: 20%;
+    height: 100%;
+}
+ul{
+    width: 160px;
+    height: 100%;
+    row-gap: 10px;
+    margin-top:40px ;
+
+}
+ul span{
+    color: black;
+    font-size: 1.4rem;
+    line-height: 50px;
+    font-weight: 800;
+}
+ul li{
+    color: rgb(60, 59, 59);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#right-div{
+    width: 80%;
+    height: 100%;
+    margin-top: 40px;
+}
+.drinks{
+    width: 370px;
+    height: fit-content;
+}
+.contents-icons{
+    width: 112px;
+    height: 112px;
+    background-size: contain;
+    border-radius: 50%;
+}
+.drinks{
+    column-gap: 20px;
+}
+.drinks p{
+    font-size: 1.3rem;
+    color: black;
+}
+.menu-contents{
+    width: 85%;
+    height: fit-content;
+    margin-top: 40px;
+}
+.line{
+    background-color: gray;
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin-top: 15px;
+}
+.contents-div{
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 20px;
+}
+/* icons imgs */
+#img-hot-coffe{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_DecafPikePlaceRoast.jpg?impolicy=1by1_tight_288");
+}
+#img-cold-coffee{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20210611_ColdBrew.jpg?impolicy=1by1_tight_288");
+}
+#img-hot-tea{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_ChaiLatte.jpg?impolicy=1by1_tight_288");
+}
+#img-cold-tea{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220810_IcedChaiTeaLatte.jpg?impolicy=1by1_tight_288");
+}
+#img-refreshers{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_StrawberryAcaiLemonadeRefreshers.jpg?impolicy=1by1_tight_288");
+}
+#img-frappiccino{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_CaramelRibbonCrunchFrapp.jpg?impolicy=1by1_tight_288");
+}
+#img-iced-energy{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/MelonBurstEnergyDrink.jpg?impolicy=1by1_tight_288");
+}
+#img-hot-chocolate{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_SignatureHotChocolate.jpg?impolicy=1by1_tight_288");
+}
+#img-bottled-beverages{
+    background-image: url(" https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190628_EthosWater.jpg?impolicy=1by1_tight_288");
+}
+#img-breakfast{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/food/EggPestoMozzarellaSandwich.jpg?impolicy=1by1_tight_288");
+}
+#img-bakery{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/food/VanillaBeanCustardDanish.jpg?impolicy=1by1_tight_288");
+}
+#img-treats{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/food/ValentinesDayCakePop-US.jpg?impolicy=1by1_tight_288");
+}
+#img-lunch{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/food/SBX20220207_GrilledCheeseOnSourdough_US.jpg?impolicy=1by1_tight_288");
+}
+#img-snacks{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/food/SBX20180710_PerfectBar_DarkChocolateChipPeanutButter.jpg?impolicy=1by1_tight_288");
+}
+#img-whole-bean{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/at-home/SunDriedEthiopiaOromiaWestArsi-US-WBReserve.jpg?impolicy=1by1_tight_288");
+}
+#img-via{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/at-home/SBX20190715_ViaInstantSweetenedIcedCoffee.jpg?impolicy=1by1_tight_288");
+}
+#img-shopping-bag{
+    background-image: url("https://globalassets.starbucks.com/digitalassets/products/merch/SBX20210405_SirenShopperBag.jpg?impolicy=1by1_tight_288");
+}
+
+/* footer styles */
+footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-1 {
+    width: 75%;
+    display: flex;
+    column-gap: 35px;
+    margin-top: 20px;
+}
+
+.lists {
+    width: 12%;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lists h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.ul-lists {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.ul-lists li {
+    color: gray;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.ul-lists li:hover {
+    color: black;
+}
+
+#hr-2 {
+    width: 80%;
+    height: 1px;
+    opacity: 40%;
+    background-color: gray;
+    margin-top: 40px;
+}
+
+#footer-2 {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footer-2-div {
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-2-lists {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#footer-2-lists li {
+    color: rgb(29, 29, 29);
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#footer-2-lists li:hover {
+    text-decoration: underline;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#icons svg {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+#footer-2-div p {
+    color: gray;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.footer-line{
+    width: 80%;
+    height: 1px solid gray;
+    background: none;
+
+}
+#hr-div{
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* fixed container styles */
+#fixed-container{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #1e3932;
+    bottom: 0;
+}
+#fixed-div{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#choose-store{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#choose-store-div{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#choose-store-div-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+#choose-store-div-texts span{
+    color: #ffffffb3;
+    font-size: 1rem;
+}
+#choose-store-div-texts h1{
+    color: white;
+    font-size: 1.3rem;
+}
+#choose-store-div svg{
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+#choose-store-hr{
+    background-color: gray;
+    width: 100%;
+    height: 1px;
+    border: none;
+}
+#fixed-div-icon{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-cart{
+    font-size: 2.0rem;
+    color: white;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 1000px) {
+    #footer-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lists {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    #footer-2 {
+        flex-direction: column;
+    }
+
+    #footer-2-div {
+        width: 100%;
+    }
+}
