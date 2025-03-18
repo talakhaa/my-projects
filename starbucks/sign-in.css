@@ -1,0 +1,150 @@
+/* global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+main,#main-container,#sign-in-container,#form-div,#checkbox-container,#article-div{
+    display: flex;
+}
+main,#main-container,#sign-in-container,#form-div,#article-div{
+    flex-direction: column;
+}
+main,#main-container,#sign-in-container,#checkbox-container,#article-div{
+    align-items: center;
+}
+
+#form-div{
+    justify-content: space-around;
+}
+
+/* local styles */
+#header svg{
+    width: 65px;
+    height: 65px;
+}
+#main-container{
+    width: 30%;
+    height: fit-content;
+    padding: 20px 0;
+}
+
+#sign-in-container{
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+form{
+    width: 100%;
+}
+#form-div h1{
+    font-size: 1.5rem;
+}
+#form-div{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+.inputs {
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: 1px solid rgb(45, 45, 45);
+    outline: none; 
+}
+
+.inputs:focus {
+    outline: 2px solid #006241;
+    border-color: #006241;
+}
+
+.inputs::placeholder{
+    font-size: 1.1rem;
+    transform: translateX(10px);
+}
+
+#checkbox-container{
+    width: 100%;
+    height: 50px;
+}
+#checkbox-container label{
+    margin-left: 10px;
+}
+#keep-signed-in{
+    width: 20px;
+    height: 20px;
+    border-radius:5px ;
+    fill: green;
+}
+#p-div{
+    width: 100%;
+    height: 50px;
+}
+#p-div p a{
+    color: #006241;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+#details{
+    color: #006241;
+    text-decoration: underline;
+}
+#submit{
+    width: 110px;
+    color: white;
+    font-size: 1.3rem;
+    height: 50px;
+    background-color: #006241;
+    border-radius: 30px;
+    border: none;
+    margin-left: 300px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0.5px #006241;
+}
+#submit:hover{
+    background-color: #004d33;
+}
+#submit:active{
+    scale: 0.9;
+    transition: 0.3s ease;
+}
+#article-div{
+    margin-top: 30px;
+    width: 80%;
+    height: fit-content;
+    row-gap: 10px;
+}
+#article-div h1{
+    font-size: 1.5rem;
+}
+#article-div article{
+    width: 100%;
+    text-align: center;
+    font-size: 1,1rem;
+}
+#article-div button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #006241;
+    background: none;
+    color: #006241;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#article-div button:hover{
+    background-color: rgba(0, 0, 0, 0.055);
+}
+#article-div button:active{
+    scale: 0.9;
+    transition: 0.3s ease;
+}
+footer{
+    margin-top: 40px;
+}
